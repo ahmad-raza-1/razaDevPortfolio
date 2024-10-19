@@ -3,7 +3,24 @@
 /***********************/
 header {
   background-color: #000 !important;
-  height: 100vh !important;
+}
+.header {
+  height: 655px !important;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .header {
+    height: 727px !important;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  .header {
+    height: 565px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    height: 510px !important;
+  }
 }
 /***********************/
 /********* logo ********/
@@ -51,8 +68,11 @@ nav {
 /***********************/
 /********* hero ********/
 /***********************/
-.hero {
-  height: calc(100vh - 101px);
+.hero .container {
+  height: 100%;
+}
+.hero .row {
+  height: 100%;
 }
 .hero .detail h1 {
   font-size: 60px;
@@ -184,9 +204,6 @@ nav {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  header {
-    height: 724px !important;
-  }
   .navbar button {
     height: 44px;
     border-bottom-right-radius: 0 !important;
@@ -461,6 +478,7 @@ nav {
     font-size: 30px !important;
   }
   .service {
+    min-width: 200px !important;
     text-align: center;
     margin: 0 !important;
     margin-bottom: 15px !important;
